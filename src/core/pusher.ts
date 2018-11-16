@@ -263,6 +263,8 @@ export default class Pusher {
 }
 
 function checkAppKey(key) {
+  console.trace();
+  console.log(key, 'key');
   if (key === null || key === undefined) {
     throw "You must pass your app key when you instantiate Pusher.";
   }
